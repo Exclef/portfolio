@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+a:link{
+    color: white;
+    text-underline-offset: 20px;
+    text-decoration: none;
+}
+
+a:visited{
+    color:white;
+    text-underline-offset: 20px;
+    text-decoration: none;
+}
+
+.slide{
+    width: 100vw;
+    height:100vh;
+}
+
+.outer-wrapper{
+    width:100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    scroll-behavior: smooth;
+
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 400vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.navbar ul{
+    list-style-type: none;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar a{
+    color: white;
+    font-family: monospace;
+    text-decoration: none;
+    letter-spacing: 2px;
+    display: block;
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.navbar li{
+    float: left;
+    
+}
+
+.one{
+    background-color: #000000;
+}
+
+#titlepage{
+    color: white;
+    text-align: center;
+    align-content: center;
+    display:block;
+    font-family: monospace;
+    font-size: 30px;
+    letter-spacing: 7px;
+}
+
+.two{
+    background-color: #000000;
+}
+
+
+#aboutpage{
+    background-image: url(elements/cel.png);
+    background-size: 100% 100%;
+}
+
+#skillspage{
+    background-image: url(elements/skills.png);
+    background-size: 100% 100%;
+}
+
+#projectspage{
+    background-image: url(elements/achievements.png);
+    background-size: 100% 100%;
+}
